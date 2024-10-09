@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Project: React.FC = () => {
-  const handleImageClick = (e: React.MouseEvent<HTMLImageElement>) => {
-    const img = e.currentTarget;
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [selectedImage, setSelectedImage] = useState<string | null>(null); 
 
-    if (img.requestFullscreen) {
-      img.requestFullscreen();
-    } else if ((img as any).webkitRequestFullscreen) {
-      // Safari için
-      (img as any).webkitRequestFullscreen();
-    } else if ((img as any).msRequestFullscreen) {
-      // IE/Edge için
-      (img as any).msRequestFullscreen();
-    }
+  const handleImageClick = (imageSrc: string) => {
+    setSelectedImage(imageSrc); 
+    setIsModalOpen(true); 
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false); 
+    setSelectedImage(null); 
   };
 
   return (
@@ -23,7 +22,7 @@ const Project: React.FC = () => {
           <img
             src="/assets/wur.png"
             alt="UPG Projesi"
-            onClick={handleImageClick}
+            onClick={() => handleImageClick("/assets/wur.png")} 
             className="cursor-pointer rounded-md"
           />
           <br />
@@ -48,24 +47,20 @@ const Project: React.FC = () => {
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h3 className="text-xl text-center font-semibold mb-4">Parçam</h3>
           <div className="flex space-x-4">
-            {" "}
-            {/* Flex container for images */}
             <img
               src="/assets/parcam1.jpg"
               alt="Parça 1"
-              onClick={handleImageClick}
-              className="cursor-pointer rounded-md w-1/3" // Resmi genişlik olarak %50 yaparak yan yana dizilmesini sağlıyoruz
+              onClick={() => handleImageClick("/assets/parcam1.jpg")} 
+              className="cursor-pointer rounded-md w-1/3"
             />
             <img
               src="/assets/parcam2.jpg"
               alt="Parça 2"
-              onClick={handleImageClick}
-              className="cursor-pointer rounded-md w-1/3" // Aynı şekilde bu resmi de %50 genişlikte yapıyoruz
+              onClick={() => handleImageClick("/assets/parcam2.jpg")} 
+              className="cursor-pointer rounded-md w-1/3"
             />
           </div>
           <p className="text-gray-700 mt-4">
-            {" "}
-            {/* Resimlerin altına biraz boşluk ekledik */}
             Bu projeyi, React Native yeteneklerimi geliştirmek için tasarladığım
             bir pazar yeri uygulaması olarak tasarladım. <br />
             <br /> Kullanıcıların kolayca ürün ekleyip silebildiği, sepet ve
@@ -77,6 +72,24 @@ const Project: React.FC = () => {
           </p>
         </div>
       </div>
+
+      {isModalOpen && ( 
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <button
+            onClick={handleCloseModal}
+            className="absolute top-4 right-4 bg-red-500 text-white p-2 rounded-full hover:bg-red-700 transition-colors"
+          >
+            &times; {}
+          </button>
+          {selectedImage && ( // Seçilen görsel varsa göster
+            <img
+              src={selectedImage}
+              alt="Büyük Proje"
+              className="max-w-full max-h-full rounded-md" 
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 };

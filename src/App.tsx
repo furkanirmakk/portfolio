@@ -1,5 +1,4 @@
 
-import Navbar from './components/Navbar';
 import About from './components/About';
 import Logolar from './components/Logolar';
 import Project from './components/Project';
