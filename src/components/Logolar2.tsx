@@ -10,10 +10,10 @@ import {
 
 const Logolar2: React.FC = () => {
   return (
-    <div className="flex justify-center py-7 bg-gradient-to-r from-slate-950 to-slate-400">
+    <div className="flex justify-center py-7 bg-gradient-to-r from-slate-600 to-slate-300">
       <div className="grid grid-cols-2 gap-12 sm:grid-cols-7">
         <a
-          href="#"
+          href="https://react.dev/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -22,7 +22,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">React</span>
         </a>
         <a
-          href="#"
+          href="https://www.typescriptlang.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -31,7 +31,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">TypeScript</span>
         </a>
         <a
-          href="#"
+          href="https://tailwindcss.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -40,7 +40,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">Tailwind CSS</span>
         </a>
         <a
-          href="#"
+          href="https://www.javascript.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -49,7 +49,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">JavaScript</span>
         </a>
         <a
-          href="#"
+          href="https://html.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -58,7 +58,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">HTML5</span>
         </a>
         <a
-          href="#"
+          href="https://www.w3schools.com/css/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"
@@ -67,7 +67,7 @@ const Logolar2: React.FC = () => {
           <span className="text-sm text-customColor mt-1">CSS3</span>
         </a>
         <a
-          href="#"
+          href="https://www.postgresql.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-orange-600"

@@ -15,7 +15,7 @@ const Project: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center py-7 bg-gradient-to-r from-slate-950 to-slate-400">
+    <div className="flex justify-center py-7 bg-gradient-to-r from-slate-600 to-slate-300">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h3 className="text-xl text-center font-semibold mb-4">UPG</h3>
