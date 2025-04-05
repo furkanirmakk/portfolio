@@ -26,4 +26,13 @@ Yeteneklerim ve teknolojik altyapım
     <img src="git photos/1.png" alt="drawing" width="500">
      <img src="git photos/2.png" alt="drawing" width="500">
   </p>
+  <p>
+Responsive tasarım 
+  </p>
+  <p> 
+    <img src="git photos/3.png" alt="drawing" width="500">
+     <img src="git photos/4.png" alt="drawing" width="500">
+    <img src="git photos/5.png" alt="drawing" width="500">
+     <img src="git photos/6.png" alt="drawing" width="500">
+  </p>
   
