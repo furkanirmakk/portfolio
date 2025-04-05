@@ -18,7 +18,7 @@ Yaptığım projeler ve detaylı açıklamaları
 
 Yeteneklerim ve teknolojik altyapım
 <br><br>
-
+👀 Göz atmak isterseniz: www.furkanirmak.com.tr
 <br><br><br>
 
   </p>
