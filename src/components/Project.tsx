@@ -111,6 +111,43 @@ const Project: React.FC = () => {
             profilimden bakabilirsiniz.
           </p>
         </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl text-center font-semibold mb-4">Hoop Reis </h3>
+          <img
+            src="/assets/hoopreis.png"
+            alt="HoopReis"
+            onClick={() => handleImageClick("/assets/hoopreis.png")}
+            className="cursor-pointer rounded-md"
+          />
+          <br />
+          <p className="text-gray-700">
+            🚛 Hoop Lojistik için Modern ve Kullanıcı Dostu Web Sitesi Tasarımı
+            Gerçek dünya ihtiyaçlarına odaklanarak, Hoop Lojistik firmasına özel
+            modern, güvenilir ve kullanıcı dostu bir web sitesi tasarladım.{" "}
+            <br /> <br />
+            💡 Proje Hedefi Hoop Lojistik’in geniş hizmet yelpazesini
+            müşterilere kolayca ulaştırabileceği, mobil uyumlu, hızlı ve sade
+            bir platform oluşturmak temel amacımızdı. Firma hakkında bilgi
+            alınabilen, hizmetler incelenebilen ve kolayca iletişime geçilebilen
+            bir yapı kuruldu <br /> <br />
+            🛠️ Kullandığım Teknolojiler React & TypeScript → Hızlı, modüler ve
+            güvenilir arayüz Tailwind CSS → Temiz, modern ve responsive tasarım
+            Responsive Tasarım → Tüm cihazlarda sorunsuz kullanım React Router →
+            Sayfalar arası geçişlerde akıcılık
+            <br /><br />
+            <br />
+            Proje detaylarına{" "}
+            <a
+              href="https://github.com/furkanirmakk/logistic5.git"
+              className="underline font-bold text-blue-600"
+              target="_blank"
+            >
+              GitHub
+            </a>{" "}
+            profilimden bakabilirsiniz.
+          </p>
+        </div>
       </div>
 
       {isModalOpen && (
