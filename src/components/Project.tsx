@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import Altunis from "../components/Altunis";
 
 const Project: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); 
-  const [selectedImage, setSelectedImage] = useState<string | null>(null); 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const handleImageClick = (imageSrc: string) => {
-    setSelectedImage(imageSrc); 
-    setIsModalOpen(true); 
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false); 
-    setSelectedImage(null); 
+    setIsModalOpen(false);
+    setSelectedImage(null);
   };
 
   return (
@@ -22,7 +23,7 @@ const Project: React.FC = () => {
           <img
             src="/assets/wur.png"
             alt="UPG Projesi"
-            onClick={() => handleImageClick("/assets/wur.png")} 
+            onClick={() => handleImageClick("/assets/wur.png")}
             className="cursor-pointer rounded-md"
           />
           <br />
@@ -50,13 +51,13 @@ const Project: React.FC = () => {
             <img
               src="/assets/parcam1.jpg"
               alt="Parça 1"
-              onClick={() => handleImageClick("/assets/parcam1.jpg")} 
+              onClick={() => handleImageClick("/assets/parcam1.jpg")}
               className="cursor-pointer rounded-md w-1/3"
             />
             <img
               src="/assets/parcam2.jpg"
               alt="Parça 2"
-              onClick={() => handleImageClick("/assets/parcam2.jpg")} 
+              onClick={() => handleImageClick("/assets/parcam2.jpg")}
               className="cursor-pointer rounded-md w-1/3"
             />
           </div>
@@ -71,9 +72,48 @@ const Project: React.FC = () => {
             akıcı hale getirmeyi hedefliyor.
           </p>
         </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl text-center font-semibold mb-4">Altun İş</h3>
+          <img
+            src="/assets/altunis.png"
+            alt="Altunİş"
+            onClick={() => handleImageClick("/assets/altunis.png")}
+            className="cursor-pointer rounded-md"
+          />
+          <br />
+          <p className="text-gray-700">
+            🌾 Tarım Ürünleri Fabrikası için Web Sitesi Tasarladım! Kendimi
+            geliştirmek ve gerçek dünya projelerinde tecrübe kazanmak amacıyla,
+            bir tarım ürünleri satan fabrikaya özel modern ve kullanıcı dostu
+            bir web sitesi tasarladım. Bu proje sayesinde hem kullanıcı deneyimi
+            hem de sektörel ihtiyaçları daha iyi analiz etme fırsatı buldum.
+            Aynı zamanda üretici-tüketici arasındaki dijital köprüyü oluşturacak
+            yapıyı kurmak benim için oldukça öğretici bir süreçti. <br />
+            <br /> 💻 Kullandığım teknolojiler: React & TypeScript ile hızlı ve
+            dinamik kullanıcı arayüzü Tailwind CSS ile temiz ve sade bir tasarım
+            Responsive yapı ile tüm cihazlarda sorunsuz görüntüleme. <br />
+            <br /> 📌 Web sitesinde neler var? Firmanın ürünlerini
+            sergileyebileceği ürün vitrin sayfası Hakkımızda ve iletişim
+            bölümleri Kolayca güncellenebilir ürün detay kartları Bu proje, hem
+            yazılım becerilerimi geliştirmemde hem de farklı sektörlerin
+            ihtiyaçlarını anlama konusunda bana çok şey kattı.
+            <br />
+            <br />
+            Proje detaylarına{" "}
+            <a
+              href="https://github.com/furkanirmakk/altunistarim.git"
+              className="underline font-bold text-blue-600"
+              target="_blank"
+            >
+              GitHub
+            </a>{" "}
+            profilimden bakabilirsiniz.
+          </p>
+        </div>
       </div>
 
-      {isModalOpen && ( 
+      {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <button
             onClick={handleCloseModal}
@@ -85,7 +125,7 @@ const Project: React.FC = () => {
             <img
               src={selectedImage}
               alt="Büyük Proje"
-              className="max-w-full max-h-full rounded-md" 
+              className="max-w-full max-h-full rounded-md"
             />
           )}
         </div>
