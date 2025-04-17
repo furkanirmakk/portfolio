@@ -135,7 +135,9 @@ const Project: React.FC = () => {
             güvenilir arayüz Tailwind CSS → Temiz, modern ve responsive tasarım
             Responsive Tasarım → Tüm cihazlarda sorunsuz kullanım React Router →
             Sayfalar arası geçişlerde akıcılık
-            <br /><br />
+            <br />
+            <br />
+            <br />
             <br />
             Proje detaylarına{" "}
             <a
@@ -146,6 +148,18 @@ const Project: React.FC = () => {
               GitHub
             </a>{" "}
             profilimden bakabilirsiniz.
+          </p>
+
+          <p className="text-gray-700 mt-4">
+            🌐 Canlı Site:{" "}
+            <a
+              href="https://hoopreis.com/" // ← burayı gerçek site URL'inle değiştir
+              className="underline font-bold text-green-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Siteyi Ziyaret Et
+            </a>
           </p>
         </div>
       </div>
