@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customColor: 'black ',
-        customColor2: '#E8F1F5', 
+        furkan: '#191A17',
+        project: '#F5EEDD',
+        text: 'white'
       },
     },
   },

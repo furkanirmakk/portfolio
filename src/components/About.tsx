@@ -3,7 +3,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className=" py-20 bg-gradient-to-r  from-slate-600 to-slate-300 text-gray-950"
+      className=" py-20  bg-gradient-to-r from-[#191A17] via-[#443007] to-[#191A17]"
     >
       <div className="flex flex-col md:flex-row items-center justify-center ">
         <img
@@ -15,10 +15,10 @@ const About: React.FC = () => {
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold leading-tight">
             <span className="text-yellow-400">Furkan Irmak</span>
           </h1>
-          <h2 className="text-base md:text-lg lg:text-2xl font-semibold mt-2 md:mt-4">
+          <h2 className="text-text md:text-lg lg:text-2xl font-semibold mt-2 md:mt-4">
             &#x2022; Frontend Developer
           </h2>
-          <p className="max-w-xl text-sm md:text-base lg:text-lg font-light leading-relaxed mt-2 md:mt-5 mx-auto">
+          <p className="max-w-xl text-text text-sm md:text-base lg:text-lg font-light leading-relaxed mt-2 md:mt-5 mx-auto">
             Bilgisayar mühendisliği bölümünden yeni mezun oldum ve kariyerime
             frontend alanında odaklanarak devam ediyorum. Anlayışlı, sosyal ve
             takım çalışmasına yatkın bir yapıya sahibim. Teknolojiyi kullanarak
