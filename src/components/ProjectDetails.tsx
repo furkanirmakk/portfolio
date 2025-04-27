@@ -76,7 +76,7 @@ Okulumuz tarafından aktif olarak kullanılmaktadır.
 • PostgreSQL 
 • AJAX
 `,
-      images: ["/assets/Wur.png"],
+      images: ["/assets/wur.png"],
     },
 
     // Diğer ürünler...
