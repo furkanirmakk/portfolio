@@ -14,23 +14,23 @@ const ProjectDetails: React.FC = () => {
       id: 1,
       name: "Hoop Reis",
       description: `
-🚛 Hoop Lojistik için Modern ve Kullanıcı Dostu Web Sitesi Tasarımı  
-Gerçek dünya ihtiyaçlarına odaklanarak, Hoop Lojistik firmasına özel modern, güvenilir ve kullanıcı dostu bir web sitesi tasarladım.
+    🚛 Hoop Lojistik için Modern ve Kullanıcı Dostu Web Sitesi Tasarımı  
+    Gerçek dünya ihtiyaçlarına odaklanarak, Hoop Lojistik firmasına özel modern, güvenilir ve kullanıcı dostu bir web sitesi tasarladım.
 
-💡 Proje Hedefi  
-Hoop Lojistik’in geniş hizmet yelpazesini müşterilere kolayca ulaştırabileceği, mobil uyumlu, hızlı ve sade bir platform oluşturmak temel amacımızdı.  
-Firma hakkında bilgi alınabilen, hizmetler incelenebilen ve kolayca iletişime geçilebilen bir yapı kuruldu.
+    💡 Proje Hedefi  
+    Hoop Lojistik’in geniş hizmet yelpazesini müşterilere kolayca ulaştırabileceği, mobil uyumlu, hızlı ve sade bir platform oluşturmak temel amacımızdı.  
+    Firma hakkında bilgi alınabilen, hizmetler incelenebilen ve kolayca iletişime geçilebilen bir yapı kuruldu.
 
-🛠️ Kullandığım Teknolojiler  
-• React & TypeScript → Hızlı, modüler ve güvenilir arayüz  
-• Tailwind CSS → Temiz, modern ve responsive tasarım  
-• Responsive Tasarım → Tüm cihazlarda sorunsuz kullanım  
-• React Router → Sayfalar arası geçişlerde akıcılık  
+    🛠️ Kullandığım Teknolojiler  
+    • React & TypeScript → Hızlı, modüler ve güvenilir arayüz  
+    • Tailwind CSS → Temiz, modern ve responsive tasarım  
+    • Responsive Tasarım → Tüm cihazlarda sorunsuz kullanım  
+    • React Router → Sayfalar arası geçişlerde akıcılık  
 
-📌 Proje detaylarına GitHub profilimden bakabilirsiniz.
+    📌 Proje detaylarına <a href="https://github.com/furkanirmakk/logistic5.git" target="_blank" rel="noopener noreferrer">GitHub</a> profilimden bakabilirsiniz.
 
-🌐 Canlı Site: Siteyi Ziyaret Et
-`,
+    🌐 <a href="https://hoopreis.com" target="_blank" rel="noopener noreferrer">Siteyi Ziyaret Et</a>
+  `,
       images: ["/assets/hoopreis.png"],
     },
     {
@@ -54,7 +54,7 @@ Aynı zamanda üretici-tüketici arasındaki dijital köprüyü oluşturacak yap
 
 Bu proje, hem yazılım becerilerimi geliştirmemde hem de farklı sektörlerin ihtiyaçlarını anlama konusunda bana çok şey kattı.
 
-Proje detaylarına GitHub profilimden bakabilirsiniz.
+Proje detaylarına <a href="https://github.com/furkanirmakk/altunistarim.git" target="_blank" rel="noopener noreferrer">GitHub</a> profilimden bakabilirsiniz.
 `,
       images: ["/assets/altunis.png"],
     },
@@ -78,7 +78,6 @@ Okulumuz tarafından aktif olarak kullanılmaktadır.
 `,
       images: ["/assets/Wur.png"],
     },
-    
 
     // Diğer ürünler...
   ];
@@ -119,9 +118,12 @@ Okulumuz tarafından aktif olarak kullanılmaktadır.
           {/* Ürün açıklaması */}
           <div className="flex flex-col items-center justify-center text-center">
             {product.description.split("\n").map((paragraph, index) => (
-              <p key={index} className="text-lg text-white mt-4 max-w-2xl">
-                {paragraph}
-              </p>
+              // Eğer HTML etiketlerini işlemek istersen
+              <div
+                key={index}
+                className="text-lg text-white mt-4 max-w-2xl"
+                dangerouslySetInnerHTML={{ __html: paragraph }}
+              />
             ))}
           </div>
         </div>
